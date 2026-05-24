@@ -1,0 +1,28 @@
+name: "Windows Build"
+
+"on":
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "src-tauri/**"
+      - "package.json"
+      - "bun.lock"
+      - "tsconfig.json"
+      - "vite.config.ts"
+      - ".github/workflows/windows-build.yml"
+      - ".github/workflows/build.yml"
+
+jobs:
+  windows-build:
+    permissions:
+      contents: read
+    uses: ./.github/workflows/build.yml
+    with:
+      platform: "windows-latest"
+      target: "x86_64-pc-windows-msvc"
+      build-args: ""
+      upload-artifacts: true
+      sign-binaries: false
+      asset-prefix: "handy-windows"
