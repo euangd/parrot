@@ -155,6 +155,14 @@ const settingUpdaters: {
     commands.changeWhisperGpuDevice(value as number),
   extra_recording_buffer_ms: (value) =>
     commands.changeExtraRecordingBufferSetting(value as number),
+  selected_kokoro_voice: (value) =>
+    commands.changeKokoroVoiceSetting(value as string | null),
+  tts_workers: (value) =>
+    commands.changeTtsWorkersSetting(value as number),
+  tts_speed: (value) =>
+    commands.changeTtsSpeedSetting(value as number),
+  tts_shorten_first_chunk: (value) =>
+    commands.changeTtsShortenFirstChunkSetting(value as boolean),
 };
 
 export const useSettingsStore = create<SettingsStore>()(

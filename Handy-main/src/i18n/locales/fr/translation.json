@@ -153,7 +153,16 @@
   "settings": {
     "modelSettings": {
       "title": "Paramètres de {{model}}",
-      "noSettingsNeeded": "Ce modèle fonctionne automatiquement sans configuration nécessaire."
+      "noSettingsNeeded": "Ce modèle fonctionne automatiquement sans configuration nécessaire.",
+      "kokoroVoice": {
+        "title": "Voice",
+        "description": "Select which Kokoro voice to use. Auto follows the language setting.",
+        "auto": "Auto (By Language)",
+        "searchPlaceholder": "Search voices...",
+        "loading": "Loading voices...",
+        "noResults": "No voices found",
+        "loadError": "Could not load available voices."
+      }
     },
     "models": {
       "title": "Modèles de Transcription",
@@ -245,7 +254,8 @@
         "output": "Sortie",
         "transcription": "Transcription",
         "history": "Historique",
-        "experimental": "Expérimental"
+        "experimental": "Expérimental",
+        "tts": "Text-to-Speech"
       },
       "experimentalToggle": {
         "label": "Fonctionnalités Expérimentales",
@@ -356,6 +366,19 @@
         "add": "Ajouter",
         "remove": "Supprimer {{word}}",
         "duplicate": "\"{{word}}\" existe déjà"
+      },
+      "ttsWorkers": {
+        "title": "TTS Workers",
+        "description": "Number of parallel synthesis engines. Auto uses your CPU core count to decide.",
+        "auto": "Auto"
+      },
+      "ttsSpeed": {
+        "title": "Speech Speed",
+        "description": "Playback speed for text-to-speech output."
+      },
+      "shortenFirstChunk": {
+        "title": "Fast First Response",
+        "description": "Synthesize a shorter first chunk for faster time-to-speech, then use longer chunks."
       }
     },
     "postProcessing": {

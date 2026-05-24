@@ -30,3 +30,7 @@ export { HistoryLimit } from "./HistoryLimit";
 export { RecordingRetentionPeriodSelector } from "./RecordingRetentionPeriod";
 export { AutostartToggle } from "./AutostartToggle";
 export { UpdateChecksToggle } from "./UpdateChecksToggle";
+export { KokoroVoiceSelector } from "./KokoroVoiceSelector";
+export { TtsSpeed } from "./TtsSpeed";
+export { TtsWorkers } from "./TtsWorkers";
+export { ShortenFirstChunk } from "./ShortenFirstChunk";

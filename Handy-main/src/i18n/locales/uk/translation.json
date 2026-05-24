@@ -153,7 +153,16 @@
   "settings": {
     "modelSettings": {
       "title": "Налаштування {{model}}",
-      "noSettingsNeeded": "Ця модель працює автоматично без потреби в налаштуванні."
+      "noSettingsNeeded": "Ця модель працює автоматично без потреби в налаштуванні.",
+      "kokoroVoice": {
+        "title": "Voice",
+        "description": "Select which Kokoro voice to use. Auto follows the language setting.",
+        "auto": "Auto (By Language)",
+        "searchPlaceholder": "Search voices...",
+        "loading": "Loading voices...",
+        "noResults": "No voices found",
+        "loadError": "Could not load available voices."
+      }
     },
     "general": {
       "title": "Загальні",
@@ -245,7 +254,8 @@
         "output": "Вивід",
         "transcription": "Транскрипція",
         "history": "Історія",
-        "experimental": "Експериментальне"
+        "experimental": "Експериментальне",
+        "tts": "Text-to-Speech"
       },
       "experimentalToggle": {
         "label": "Експериментальні функції",
@@ -356,6 +366,19 @@
         "add": "Додати",
         "remove": "Видалити {{word}}",
         "duplicate": "\"{{word}}\" вже існує"
+      },
+      "ttsWorkers": {
+        "title": "TTS Workers",
+        "description": "Number of parallel synthesis engines. Auto uses your CPU core count to decide.",
+        "auto": "Auto"
+      },
+      "ttsSpeed": {
+        "title": "Speech Speed",
+        "description": "Playback speed for text-to-speech output."
+      },
+      "shortenFirstChunk": {
+        "title": "Fast First Response",
+        "description": "Synthesize a shorter first chunk for faster time-to-speech, then use longer chunks."
       }
     },
     "postProcessing": {

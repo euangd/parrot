@@ -1,0 +1,20 @@
+{
+    "chat.sessionSync.enabled": true,
+    "chat.agent.sandbox.autoApproveUnsandboxedCommands": true,
+    "chat.agent.thinking.generateTitles": true,
+    "chat.exitAfterDelegation": true,
+    "chat.agentSessionProjection.enabled": true,
+    "chat.tools.compressOutput.enabled": true,
+    "chat.tools.confirmationCarousel.enabled": true,
+    "chat.mcp.discovery.enabled": {
+        "claude-desktop": true,
+        "cursor-global": true,
+        "cursor-workspace": true
+    },
+    "chat.mcp.gallery.enabled": true,
+    "chat.mcp.assisted.nuget.enabled": true,
+    "chat.includeReferencedInstructions": true,
+    "chat.experimental.useSkillAdherencePrompt": true,
+    "chat.useNestedAgentsMdFiles": true,
+    "inlineChat.notebookAgent": true
+}
