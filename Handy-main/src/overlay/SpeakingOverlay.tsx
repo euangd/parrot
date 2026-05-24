@@ -21,7 +21,6 @@ const SpeakingOverlay: React.FC = () => {
   const [state, setState] = useState<OverlayState>("processing");
   const [speakingPaused, setSpeakingPaused] = useState(false);
   const [isTogglingPause, setIsTogglingPause] = useState(false);
-  const [showCloseButton, setShowCloseButton] = useState<boolean>(true);
   const [spokenText, setSpokenText] = useState<string>("");
   // Suppresses size transitions when the overlay reappears after being
   // hidden, so it snaps to the correct size instantly instead of animating
@@ -63,10 +62,6 @@ const SpeakingOverlay: React.FC = () => {
     const setupEventListeners = async () => {
       const unlistenShow = await listen("show-overlay", async (event) => {
         await syncLanguageFromSettings();
-        const settings = await commands.getAppSettings();
-        if (settings && settings.status === "ok") {
-          setShowCloseButton(settings.data.show_close_button ?? true);
-        }
 
         const payload = event.payload as OverlayPayload;
 
@@ -149,15 +144,13 @@ const SpeakingOverlay: React.FC = () => {
       dir={direction}
       className={`speaking-overlay ${state}-state ${isVisible ? "fade-in" : ""} ${speakingPaused ? "paused" : ""} ${noTransition ? "no-transition" : ""}`}
     >
-      {showCloseButton && (
-        <button
-          type="button"
-          className="mac-close-button"
-          onClick={() => commands.cancelOperation()}
-          title={t("overlay.close", { defaultValue: "Close" })}
-          aria-label="Close"
-        />
-      )}
+      <button
+        type="button"
+        className="mac-close-button"
+        onClick={() => commands.cancelOperation()}
+        title={t("overlay.close", { defaultValue: "Close" })}
+        aria-label="Close"
+      />
 
       <div
         className={`overlay-layer processing-layer ${!isSpeaking ? "active" : ""}`}
