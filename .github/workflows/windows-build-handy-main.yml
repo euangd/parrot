@@ -20,14 +20,14 @@ jobs:
         working-directory: Handy-main
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Enable long paths (Windows)
         shell: pwsh
         run: |
           New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
           git config --system core.longpaths true
-
-      - name: Checkout repository
-        uses: actions/checkout@v4
 
       - name: Shorten build path (Windows)
         shell: pwsh
