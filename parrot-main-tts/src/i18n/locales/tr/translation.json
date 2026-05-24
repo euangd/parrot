@@ -1,0 +1,363 @@
+{
+  "tray": {
+    "settings": "Ayarlar...",
+    "checkUpdates": "Güncellemeleri Kontrol Et...",
+    "copyLastText": "Son transkripti kopyala",
+    "unloadModel": "Modeli boşalt",
+    "quit": "Çıkış"
+  },
+  "sidebar": {
+    "general": "Genel",
+    "models": "Modeller",
+    "advanced": "Gelişmiş",
+    "history": "Geçmiş",
+    "debug": "Hata Ayıklama",
+    "about": "Hakkında"
+  },
+  "onboarding": {
+    "subtitle": "Başlamak için bir transkripsiyon modeli seçin",
+    "recommended": "Önerilen",
+    "download": "İndir",
+    "downloading": "İndiriliyor...",
+    "customModelDescription": "Resmi olarak desteklenmiyor",
+    "downloadFailed": "İndirme başarısız oldu. Lütfen tekrar deneyin.",
+    "modelCard": {
+      "accuracy": "doğruluk",
+      "speed": "hız"
+    },
+    "models": {},
+    "errors": {
+      "loadModels": "Mevcut modeller yüklenemedi",
+      "downloadModel": "Model indirilemedi: {{error}}"
+    },
+    "permissions": {
+      "title": "İzinler Gerekli",
+      "description": "Parrot'nin düzgün çalışabilmesi için birkaç izne ihtiyacı var.",
+      "accessibility": {
+        "title": "Erişilebilirlik Erişimi",
+        "description": "Transkribe edilen metni uygulamalarınıza yazabilmek için gereklidir."
+      },
+      "grant": "İzin Ver",
+      "granted": "Verildi",
+      "waiting": "Bekleniyor...",
+      "allGranted": "Her şey hazır!",
+      "errors": {
+        "checkFailed": "İzinler kontrol edilemedi. Lütfen tekrar deneyin.",
+        "requestFailed": "İzin isteği başarısız oldu. Lütfen tekrar deneyin."
+      }
+    }
+  },
+  "modelSelector": {
+    "custom": "Özel",
+    "active": "Aktif",
+    "switching": "Değiştiriliyor...",
+    "noModelsAvailable": "Kullanılabilir model yok",
+    "extracting": "{{modelName}} çıkarılıyor...",
+    "extractingMultiple": "{{count}} model çıkarılıyor...",
+    "extractingGeneric": "Çıkarılıyor...",
+    "downloading": "%{{percentage}} indiriliyor",
+    "downloadingMultiple": "{{count}} model indiriliyor...",
+    "modelReady": "Model Hazır",
+    "loading": "{{modelName}} yükleniyor...",
+    "loadingGeneric": "Yükleniyor...",
+    "modelError": "Model Hatası",
+    "modelUnloaded": "Model Boşaltıldı",
+    "noModelDownloadRequired": "Model Yok – İndirme Gerekli",
+    "deleteModel": "{{modelName}} Sil",
+    "downloadSpeed": "{{speed}} MB/s",
+    "cancel": "İptal",
+    "cancelDownload": "İndirmeyi iptal et",
+    "capabilities": {
+      "languageSelection": "Birden fazla giriş dilini destekler",
+      "singleLanguage": "Yalnızca bu dili destekler",
+      "multiLanguage": "Çok dilli",
+      "languageOnly": "Yalnızca {{language}}"
+    }
+  },
+  "settings": {
+    "howToUseTitle": "Nasıl kullanılır",
+    "howToUseStep1": "Herhangi bir metni seçin",
+    "howToUseStep2": "Sesli okumak için <shortcut /> tuşuna basın",
+    "modelSettings": {
+      "title": "{{model}} Ayarları",
+      "noSettingsNeeded": "Bu model yapılandırma gerektirmeden otomatik olarak çalışır.",
+      "kokoroVoice": {
+        "title": "Voice",
+        "description": "Select which Kokoro voice to use. Auto follows the language setting.",
+        "auto": "Auto (By Language)",
+        "searchPlaceholder": "Search voices...",
+        "loading": "Loading voices...",
+        "noResults": "No voices found",
+        "loadError": "Could not load available voices."
+      }
+    },
+    "general": {
+      "title": "Genel",
+      "shortcut": {
+        "title": "Parrot Kısayolları",
+        "description": "Sesle yazma kaydını başlatmak için klavye kısayollarını yapılandırın",
+        "loading": "Kısayollar yükleniyor...",
+        "none": "Kısayol yapılandırılmadı",
+        "notFound": "Kısayol bulunamadı",
+        "pressKeys": "Tuşlara basın...",
+        "bindings": {
+          "speak": {
+            "name": "Sesli Oku Kısayolu",
+            "description": "Seçili metni sesli oku. Durdurmak için tekrar basın."
+          },
+          "play_pause": {
+            "name": "Oynat/Duraklat Kısayolu",
+            "description": "Konuşma oynatmayı duraklat veya devam ettir."
+          }
+        },
+        "errors": {
+          "restore": "Orijinal kısayol geri yüklenemedi",
+          "set": "Kısayol ayarlanamadı: {{error}}",
+          "reset": "Kısayol orijinal değerine sıfırlanamadı"
+        }
+      },
+      "language": {
+        "title": "Dil",
+        "description": "Konuşma tanıma dilini seçin. 'Otomatik' seçeneği dili kendisi belirler, ancak belirli bir dil seçmek o dildeki doğruluğu artırabilir.",
+        "descriptionUnsupported": "Parakeet modeli dili otomatik algılar. Manuel seçim gerekmez.",
+        "searchPlaceholder": "Dil ara...",
+        "noResults": "Dil bulunamadı",
+        "auto": "Otomatik"
+      }
+    },
+    "models": {
+      "title": "Transkripsiyon Modelleri",
+      "description": "Bir transkripsiyon modeli seçin veya ek modeller indirin. Farklı modeller değişen doğruluk ve hız seviyeleri sunar.",
+      "yourModels": "İndirilen modeller",
+      "availableModels": "İndirilebilir",
+      "downloaded": "İndirildi",
+      "available": "İndirilebilir",
+      "deleteConfirm": "{{modelName}} modelini silmek istediğinizden emin misiniz? Kullanmak için tekrar indirmeniz gerekecek.",
+      "deleteActiveConfirm": "{{modelName}} aktif modelinizdir. Silmek, yeni bir model seçene kadar transkripsiyonları durduracaktır. Emin misiniz?",
+      "deleteTitle": "Modeli Sil",
+      "filters": {
+        "all": "Tümü",
+        "multiLanguage": "Çok dilli",
+        "translation": "Çeviri",
+        "allLanguages": "Tüm Diller"
+      },
+      "noModelsMatch": "Bu filtreyle eşleşen model yok."
+    },
+    "sound": {
+      "title": "Ses",
+      "audioFeedback": {
+        "label": "Sesli Geri Bildirim",
+        "description": "Kayıt başladığında ve bittiğinde ses çalar"
+      },
+      "outputDevice": {
+        "title": "Çıkış Cihazı",
+        "description": "Geri bildirim sesleri için ses çıkış cihazını seçin",
+        "placeholder": "Çıkış cihazı seçin...",
+        "loading": "Yükleniyor..."
+      },
+      "volume": {
+        "title": "Ses Seviyesi",
+        "description": "Sesli geri bildirimlerin ses seviyesini ayarlayın"
+      }
+    },
+    "advanced": {
+      "title": "Gelişmiş",
+      "groups": {
+        "app": "Uygulama",
+        "speech": "Speech",
+        "history": "Geçmiş",
+        "experimental": "Deneysel"
+      },
+      "ttsWorkers": {
+        "title": "TTS Workers",
+        "description": "Number of parallel synthesis engines. Auto uses your CPU core count to decide.",
+        "auto": "Auto"
+      },
+      "ttsSpeed": {
+        "title": "Speech Speed",
+        "description": "Playback speed for text-to-speech output."
+      },
+      "shortenFirstChunk": {
+        "title": "Fast First Response",
+        "description": "Synthesize a shorter first chunk for faster time-to-speech, then use longer chunks."
+      },
+      "experimentalToggle": {
+        "label": "Deneysel Özellikler",
+        "description": "Hala geliştirme aşamasında olan deneysel özellikleri etkinleştir."
+      },
+      "startHidden": {
+        "label": "Gizli Başlat",
+        "description": "Pencereyi açmadan sistem tepsisinde başlatır."
+      },
+      "autostart": {
+        "label": "Başlangıçta Çalıştır",
+        "description": "Bilgisayara giriş yaptığınızda Parrot otomatik olarak başlatılır."
+      },
+      "showTrayIcon": {
+        "label": "Tepsi simgesini göster",
+        "description": "Parrot simgesini sistem tepsisinde göster."
+      },
+      "overlay": {
+        "title": "Overlay Konumu",
+        "description": "Kayıt ve transkripsiyon sırasında görsel geri bildirim kaplamasını gösterir. Linux'ta 'Yok' önerilir.",
+        "options": {
+          "none": "Yok",
+          "bottom": "Alt",
+          "top": "Üst"
+        }
+      },
+      "modelUnload": {
+        "title": "Modeli Boşalt",
+        "description": "Belirtilen süre boyunca kullanılmadığında modelin GPU/CPU belleğini otomatik olarak serbest bırakır.",
+        "options": {
+          "never": "Asla",
+          "immediately": "Hemen",
+          "min2": "2 dakika sonra",
+          "min5": "5 dakika sonra",
+          "min10": "10 dakika sonra",
+          "min15": "15 dakika sonra",
+          "hour1": "1 saat sonra",
+          "sec5": "5 saniye sonra (Debug)"
+        }
+      }
+    },
+    "history": {
+      "title": "Geçmiş",
+      "openFolder": "Ses Klasörünü Aç",
+      "loading": "Geçmiş yükleniyor...",
+      "empty": "Henüz transkripsiyon yok. Geçmişinizi oluşturmak için kayda başlayın!",
+      "copyToClipboard": "Transkripsiyonu panoya kopyala",
+      "save": "Transkripsiyonu kaydet",
+      "unsave": "Kaydedilenlerden kaldır",
+      "delete": "Kaydı sil",
+      "deleteError": "Kayıt silinemedi. Lütfen tekrar deneyin."
+    },
+    "debug": {
+      "title": "Hata Ayıklama",
+      "logDirectory": {
+        "title": "Log Dizini",
+        "description": "Log dosyalarının saklandığı konum"
+      },
+      "logLevel": {
+        "title": "Log Seviyesi",
+        "description": "Loglamanın ayrıntı düzeyini ayarla"
+      },
+      "updateChecks": {
+        "label": "Güncellemeleri Kontrol Et",
+        "description": "Parrot için yeni sürümleri otomatik olarak kontrol eder"
+      },
+      "soundTheme": {
+        "label": "Ses Teması",
+        "description": "Kayıt başlangıç ve bitişi için sesli geri bildirim temasını seçin"
+      },
+      "historyLimit": {
+        "title": "Geçmiş Limiti",
+        "description": "Saklanacak maksimum geçmiş kaydı sayısı",
+        "entries": "kayıt"
+      },
+      "historyRetention": {
+        "title": "Kayıtları Otomatik Sil",
+        "description": "Alan tasarrufu için eski kayıtları otomatik olarak siler",
+        "never": "Asla",
+        "preserveLimit": "Son {{count}} kaydı tut",
+        "days3": "3 gün sonra",
+        "weeks2": "2 hafta sonra",
+        "months3": "3 ay sonra",
+        "placeholder": "Saklama süresi seçin..."
+      },
+      "keyboardImplementation": {
+        "title": "Keyboard Implementation",
+        "description": "Choose the keyboard shortcut backend.",
+        "bindingsReset": "Keyboard shortcuts were incompatible and reset to defaults"
+      },
+      "paths": {
+        "appData": "Uygulama Verileri:",
+        "models": "Modeller:",
+        "settings": "Ayarlar:"
+      }
+    },
+    "about": {
+      "title": "Hakkında",
+      "version": {
+        "title": "Sürüm",
+        "description": "Parrot'nin mevcut sürümü"
+      },
+      "appDataDirectory": {
+        "title": "Uygulama Veri Dizini",
+        "description": "Parrot'nin verilerini sakladığı konum"
+      },
+      "sourceCode": {
+        "title": "Kaynak Kodu",
+        "description": "Kaynak kodunu görüntüle ve katkıda bulun",
+        "button": "GitHub'da Görüntüle"
+      },
+      "supportDevelopment": {
+        "title": "Geliştirmeyi Destekle",
+        "description": "Parrot'yi geliştirmeye devam etmemize yardımcı olun",
+        "button": "Bağış Yap"
+      },
+      "acknowledgments": {
+        "title": "Teşekkürler",
+        "handy": {
+          "title": "Handy",
+          "description": "The original project that Parrot was forked from",
+          "details": "Parrot is a fork of Handy by CJ Pais. Thanks for building the foundation that made Parrot possible."
+        }
+      }
+    }
+  },
+  "footer": {
+    "downloadingModel": "{{model}} indiriliyor...",
+    "checkingUpdates": "Güncellemeler kontrol ediliyor...",
+    "updateAvailable": "Güncelleme mevcut: {{version}}",
+    "updateAvailableShort": "Güncelleme mevcut",
+    "upToDate": "Güncel",
+    "downloadUpdate": "Güncellemeyi İndir",
+    "restart": "Yeniden Başlat",
+    "updateCheckingDisabled": "Güncelleme Kontrolü Devre Dışı",
+    "downloading": "İndiriliyor... %{{progress}}",
+    "installing": "Yükleniyor...",
+    "preparing": "Hazırlanıyor...",
+    "checkForUpdates": "Güncellemeleri kontrol et"
+  },
+  "common": {
+    "loading": "Yükleniyor...",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "reset": "Sıfırla",
+    "add": "Ekle",
+    "remove": "Kaldır",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "create": "Oluştur",
+    "update": "Güncelle",
+    "close": "Kapat",
+    "open": "Aç",
+    "default": "Varsayılan",
+    "enabled": "Etkin",
+    "disabled": "Devre Dışı",
+    "on": "Açık",
+    "off": "Kapalı",
+    "yes": "Evet",
+    "no": "Hayır",
+    "noOptionsFound": "Seçenek bulunamadı"
+  },
+  "accessibility": {
+    "permissionsRequired": "Erişilebilirlik İzinleri Gerekli",
+    "permissionsDescription": "Parrot, transkribe edilen metni yazabilmek için erişilebilirlik izinlerine ihtiyaç duyar.",
+    "openSettings": "Sistem Ayarlarını Aç",
+    "dismiss": "Yoksay"
+  },
+  "errors": {
+    "loadDirectory": "Dizin yüklenirken hata oluştu: {{error}}"
+  },
+  "appLanguage": {
+    "title": "Uygulama Dili",
+    "description": "Parrot arayüzünün dilini değiştirin"
+  },
+  "overlay": {
+    "speaking": "Speaking...",
+    "processing": "İşleniyor...",
+    "reading": "Reading:"
+  }
+}

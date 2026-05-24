@@ -1,0 +1,363 @@
+{
+  "tray": {
+    "settings": "...الإعدادات",
+    "checkUpdates": "...التحقق من وجود تحديثات",
+    "copyLastText": "نسخ آخر نص تم تفريغه",
+    "unloadModel": "تفريغ النموذج",
+    "quit": "إنهاء"
+  },
+  "sidebar": {
+    "general": "عام",
+    "models": "النماذج",
+    "advanced": "متقدم",
+    "history": "السجل",
+    "debug": "تصحيح الأخطاء",
+    "about": "حول"
+  },
+  "onboarding": {
+    "subtitle": "للبدء، اختر نموذج التفريغ الصوتي",
+    "recommended": "موصى به",
+    "download": "تنزيل",
+    "downloading": "...جاري التنزيل",
+    "customModelDescription": "غير مدعوم رسميًا",
+    "downloadFailed": "فشل التنزيل. يرجى المحاولة مرة أخرى.",
+    "modelCard": {
+      "accuracy": "الدقة",
+      "speed": "السرعة"
+    },
+    "models": {},
+    "errors": {
+      "loadModels": "فشل تحميل النماذج المتاحة",
+      "downloadModel": "فشل تنزيل النموذج: {{error}}"
+    },
+    "permissions": {
+      "title": "الأذونات المطلوبة",
+      "description": ".يحتاج Parrot إلى بعض الأذونات ليعمل بشكل صحيح",
+      "accessibility": {
+        "title": "إمكانية الوصول",
+        "description": ".مطلوب لكتابة النص المفرغ في تطبيقاتك"
+      },
+      "grant": "منح الإذن",
+      "granted": "تم المنح",
+      "waiting": "...في الانتظار",
+      "allGranted": "كل شيء جاهز!",
+      "errors": {
+        "checkFailed": "فشل التحقق من الأذونات. يرجير المحاولة مرة أخرى.",
+        "requestFailed": "فشل طلب الإذن. يرجى المحاولة مرة أخرى."
+      }
+    }
+  },
+  "modelSelector": {
+    "custom": "مخصص",
+    "active": "نشط",
+    "switching": "جارٍ التبديل...",
+    "noModelsAvailable": "لا توجد نماذج متاحة",
+    "extracting": "...جاري استخراج {{modelName}}",
+    "extractingMultiple": "...جاري استخراج {{count}} من النماذج",
+    "extractingGeneric": "...جاري الاستخراج",
+    "downloading": "جاري التنزيل {{percentage}}%",
+    "downloadingMultiple": "جاري تنزيل {{count}} من النماذج...",
+    "modelReady": "النموذج جاهز",
+    "loading": "...جاري تحميل {{modelName}}",
+    "loadingGeneric": "...جاري التحميل",
+    "modelError": "خطأ في النموذج",
+    "modelUnloaded": "تم إلغاء تحميل النموذج",
+    "noModelDownloadRequired": "لا يوجد نموذج - التنزيل مطلوب",
+    "deleteModel": "حذف {{modelName}}",
+    "downloadSpeed": "{{speed}} ميجابايت/ث",
+    "cancel": "إلغاء",
+    "cancelDownload": "إلغاء التنزيل",
+    "capabilities": {
+      "languageSelection": "يدعم اختيار اللغة",
+      "singleLanguage": "يدعم هذه اللغة فقط",
+      "multiLanguage": "متعدد اللغات",
+      "languageOnly": "{{language}} فقط"
+    }
+  },
+  "settings": {
+    "howToUseTitle": "كيفية الاستخدام",
+    "howToUseStep1": "حدد أي نص",
+    "howToUseStep2": "اضغط <shortcut /> للقراءة بصوت عالٍ",
+    "modelSettings": {
+      "title": "إعدادات النموذج",
+      "noSettingsNeeded": "لا توجد إعدادات مطلوبة لهذا النموذج",
+      "kokoroVoice": {
+        "title": "Voice",
+        "description": "Select which Kokoro voice to use. Auto follows the language setting.",
+        "auto": "Auto (By Language)",
+        "searchPlaceholder": "Search voices...",
+        "loading": "Loading voices...",
+        "noResults": "No voices found",
+        "loadError": "Could not load available voices."
+      }
+    },
+    "general": {
+      "title": "عام",
+      "shortcut": {
+        "title": "اختصارات Parrot",
+        "description": "إعداد اختصارات لوحة المفاتيح لبدء تسجيل التفريغ الصوتي",
+        "loading": "...جاري تحميل الاختصارات",
+        "none": "لا توجد اختصارات مجهزة",
+        "notFound": "الاختصار غير موجود",
+        "pressKeys": "...اضغط على المفاتيح",
+        "bindings": {
+          "speak": {
+            "name": "اختصار القراءة بصوت عالٍ",
+            "description": "اقرأ النص المحدد بصوت عالٍ. اضغط مرة أخرى للإيقاف."
+          },
+          "play_pause": {
+            "name": "اختصار تشغيل/إيقاف مؤقت",
+            "description": "إيقاف مؤقت أو استئناف تشغيل الكلام."
+          }
+        },
+        "errors": {
+          "restore": "فشل استعادة الاختصار الأصلي",
+          "set": "فشل تعيين الاختصار: {{error}}",
+          "reset": "فشل إعادة تعيين الاختصار إلى قيمته الأصلية"
+        }
+      },
+      "language": {
+        "title": "اللغة",
+        "description": ".اختر لغة التعرف على الكلام. سيحدد 'تلقائي' اللغة تلقائياً، بينما يؤدي اختيار لغة معينة إلى تحسين الدقة لتلك اللغة",
+        "descriptionUnsupported": ".يكتشف نموذج Parakeet اللغة تلقائياً. لا يلزم الاختيار اليدوي",
+        "searchPlaceholder": "البحث عن اللغات...",
+        "noResults": "لم يتم العثور على لغات",
+        "auto": "تلقائي"
+      }
+    },
+    "models": {
+      "title": "نماذج النسخ",
+      "description": "اختر نموذج نسخ أو قم بتنزيل نماذج إضافية. تقدم النماذج المختلفة مستويات متفاوتة من الدقة والسرعة.",
+      "yourModels": "النماذج المحمّلة",
+      "availableModels": "متاح للتنزيل",
+      "downloaded": "تم التنزيل",
+      "available": "متاح للتنزيل",
+      "deleteConfirm": "هل أنت متأكد أنك تريد حذف {{modelName}}؟ ستحتاج إلى تنزيله مرة أخرى لاستخدامه.",
+      "deleteActiveConfirm": "{{modelName}} هو النموذج النشط حاليًا. حذفه سيوقف النسخ حتى تختار نموذجًا جديدًا. هل أنت متأكد؟",
+      "deleteTitle": "حذف النموذج",
+      "filters": {
+        "all": "الكل",
+        "multiLanguage": "متعدد اللغات",
+        "translation": "ترجمة",
+        "allLanguages": "جميع اللغات"
+      },
+      "noModelsMatch": "لا توجد نماذج مطابقة لهذا الفلتر."
+    },
+    "sound": {
+      "title": "الصوت",
+      "audioFeedback": {
+        "label": "تنبيهات صوتية",
+        "description": "تشغيل صوت عند بدء التسجيل وتوقفه"
+      },
+      "outputDevice": {
+        "title": "جهاز الإخراج",
+        "description": "اختر جهاز إخراج الصوت المفضل لتنبيهات الصوت",
+        "placeholder": "...اختر جهاز الإخراج",
+        "loading": "...جاري التحميل"
+      },
+      "volume": {
+        "title": "مستوى الصوت",
+        "description": "ضبط مستوى صوت تنبيهات الصوت"
+      }
+    },
+    "advanced": {
+      "title": "متقدم",
+      "groups": {
+        "app": "التطبيق",
+        "speech": "Speech",
+        "history": "السجل",
+        "experimental": "تجريبي"
+      },
+      "ttsWorkers": {
+        "title": "TTS Workers",
+        "description": "Number of parallel synthesis engines. Auto uses your CPU core count to decide.",
+        "auto": "Auto"
+      },
+      "ttsSpeed": {
+        "title": "Speech Speed",
+        "description": "Playback speed for text-to-speech output."
+      },
+      "shortenFirstChunk": {
+        "title": "Fast First Response",
+        "description": "Synthesize a shorter first chunk for faster time-to-speech, then use longer chunks."
+      },
+      "experimentalToggle": {
+        "label": "الميزات التجريبية",
+        "description": ".تمكين الميزات التجريبية التي لا تزال قيد التطوير"
+      },
+      "startHidden": {
+        "label": "بدء مخفي",
+        "description": ".التشغيل في صينية النظام دون فتح النافذة"
+      },
+      "autostart": {
+        "label": "التشغيل عند بدء التشغيل",
+        "description": ".بدء تشغيل Parrot تلقائياً عند تسجيل الدخول إلى جهاز الكمبيوتر الخاص بك"
+      },
+      "showTrayIcon": {
+        "label": "إظهار أيقونة شريط النظام",
+        "description": ".عرض أيقونة Parrot في شريط النظام"
+      },
+      "overlay": {
+        "title": "موقع التراكب",
+        "description": "عرض تراكب الملاحظات المرئية أثناء التسجيل والتفريغ. على نظام Linux يوصى بـ 'بلا'.",
+        "options": {
+          "none": "بلا",
+          "bottom": "أسفل",
+          "top": "أعلى"
+        }
+      },
+      "modelUnload": {
+        "title": "إلغاء تحميل النموذج",
+        "description": "تحرير ذاكرة GPU/CPU تلقائياً عندما لا يتم استخدام النموذج للوقت المحدد",
+        "options": {
+          "never": "أبداً",
+          "immediately": "فوراً",
+          "min2": "بعد دقيقتين",
+          "min5": "بعد 5 دقائق",
+          "min10": "بعد 10 دقائق",
+          "min15": "بعد 15 دقيقة",
+          "hour1": "بعد ساعة واحدة",
+          "sec5": "بعد 5 ثوانٍ (تصحيح أخطاء)"
+        }
+      }
+    },
+    "history": {
+      "title": "السجل",
+      "openFolder": "فتح مجلد الصوت",
+      "loading": "...جاري تحميل السجل",
+      "empty": "!لا يوجد تفريغ صوتي بعد. ابدأ التسجيل لبناء سجلك",
+      "copyToClipboard": "نسخ التفريغ إلى الحافظة",
+      "save": "حفظ التفريغ",
+      "unsave": "إزالة من المحفوظات",
+      "delete": "حذف الإدخال",
+      "deleteError": ".فشل حذف الإدخال. يرجى المحاولة مرة أخرى"
+    },
+    "debug": {
+      "title": "تصحيح الأخطاء",
+      "logDirectory": {
+        "title": "مجلد السجلات",
+        "description": "الموقع الذي يتم فيه تخزين ملفات السجل"
+      },
+      "logLevel": {
+        "title": "مستوى السجل",
+        "description": "ضبط درجة تفصيل السجلات"
+      },
+      "updateChecks": {
+        "label": "التحقق من وجود تحديثات",
+        "description": "التحقق تلقائياً من وجود إصدارات جديدة من Parrot"
+      },
+      "soundTheme": {
+        "label": "سمة الصوت",
+        "description": "اختر سمة صوت لتنبيهات بدء وتوقف التسجيل"
+      },
+      "historyLimit": {
+        "title": "حد السجل",
+        "description": "الحد الأقصى لعدد إدخالات السجل المراد الاحتفاظ بها",
+        "entries": "إدخالات"
+      },
+      "historyRetention": {
+        "title": "حذف التسجيلات تلقائياً",
+        "description": "حذف التسجيلات القديمة تلقائياً لتوفير المساحة",
+        "never": "أبداً",
+        "preserveLimit": "الاحتفاظ بآخر {{count}}",
+        "days3": "بعد 3 أيام",
+        "weeks2": "بعد أسبوعين",
+        "months3": "بعد 3 أشهر",
+        "placeholder": "اختر فترة الاحتفاظ..."
+      },
+      "keyboardImplementation": {
+        "title": "تنفيذ لوحة المفاتيح",
+        "description": ".اختر الواجهة الخلفية لاختصارات لوحة المفاتيح",
+        "bindingsReset": "كانت اختصارات لوحة المفاتيح غير متوافقة وتمت إعادة تعيينها إلى القيم الافتراضية"
+      },
+      "paths": {
+        "appData": "بيانات التطبيق:",
+        "models": "النماذج:",
+        "settings": "الإعدادات:"
+      }
+    },
+    "about": {
+      "title": "حول",
+      "version": {
+        "title": "الإصدار",
+        "description": "الإصدار الحالي من Parrot"
+      },
+      "appDataDirectory": {
+        "title": "مجلد بيانات التطبيق",
+        "description": "الموقع الذي يخزن فيه Parrot بياناته"
+      },
+      "sourceCode": {
+        "title": "كود المصدر",
+        "description": "عرض كود المصدر والمساهمة",
+        "button": "عرض على GitHub"
+      },
+      "supportDevelopment": {
+        "title": "دعم التطوير",
+        "description": "ساعدنا في مواصلة بناء Parrot",
+        "button": "تبرع"
+      },
+      "acknowledgments": {
+        "title": "شكر وتقدير",
+        "handy": {
+          "title": "Handy",
+          "description": "The original project that Parrot was forked from",
+          "details": "Parrot is a fork of Handy by CJ Pais. Thanks for building the foundation that made Parrot possible."
+        }
+      }
+    }
+  },
+  "footer": {
+    "downloadingModel": "...جاري تنزيل {{model}}",
+    "checkingUpdates": "...جاري التحقق من وجود تحديثات",
+    "updateAvailable": "تحديث متاح: {{version}}",
+    "updateAvailableShort": "تحديث متاح",
+    "upToDate": "محدث",
+    "downloadUpdate": "تنزيل التحديث",
+    "restart": "إعادة تشغيل",
+    "updateCheckingDisabled": "تم تعطيل التحقق من التحديث",
+    "downloading": "...جاري التنزيل {{progress}}%",
+    "installing": "...جاري التثبيت",
+    "preparing": "...جاري التحضير",
+    "checkForUpdates": "التحقق من وجود تحديثات"
+  },
+  "common": {
+    "loading": "...جاري التحميل",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "reset": "إعادة تعيين",
+    "add": "إضافة",
+    "remove": "إزالة",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "create": "إنشاء",
+    "update": "تحديث",
+    "close": "إغلاق",
+    "open": "فتح",
+    "default": "افتراضي",
+    "enabled": "ممكن",
+    "disabled": "معطل",
+    "on": "تشغيل",
+    "off": "إيقاف",
+    "yes": "نعم",
+    "no": "لا",
+    "noOptionsFound": "لم يتم العثور على خيارات"
+  },
+  "accessibility": {
+    "permissionsRequired": "أذونات إمكانية الوصول مطلوبة",
+    "permissionsDescription": ".يحتاج Parrot إلى أذونات إمكانية الوصول لكتابة النص المفرغ",
+    "openSettings": "فتح إعدادات النظام",
+    "dismiss": "تجاهل"
+  },
+  "errors": {
+    "loadDirectory": "خطأ في تحميل المجلد: {{error}}"
+  },
+  "appLanguage": {
+    "title": "لغة التطبيق",
+    "description": "تغيير لغة واجهة Parrot"
+  },
+  "overlay": {
+    "speaking": "Speaking...",
+    "processing": "...جاري المعالجة",
+    "reading": "Reading:"
+  }
+}

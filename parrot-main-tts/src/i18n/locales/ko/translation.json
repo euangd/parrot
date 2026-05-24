@@ -1,0 +1,363 @@
+{
+  "tray": {
+    "settings": "설정...",
+    "checkUpdates": "업데이트 확인...",
+    "copyLastText": "마지막 녹음 내용 복사",
+    "unloadModel": "모델 언로드",
+    "quit": "종료"
+  },
+  "sidebar": {
+    "general": "일반",
+    "models": "모델",
+    "advanced": "고급",
+    "history": "히스토리",
+    "debug": "디버그",
+    "about": "정보"
+  },
+  "onboarding": {
+    "subtitle": "시작하려면 음성 인식 모델을 선택하세요",
+    "recommended": "추천",
+    "download": "다운로드",
+    "downloading": "다운로드 중...",
+    "customModelDescription": "공식 지원되지 않음",
+    "downloadFailed": "다운로드에 실패했습니다. 다시 시도해주세요.",
+    "modelCard": {
+      "accuracy": "정확도",
+      "speed": "속도"
+    },
+    "models": {},
+    "errors": {
+      "loadModels": "사용 가능한 모델을 불러오는데 실패했습니다",
+      "downloadModel": "모델 다운로드 실패: {{error}}"
+    },
+    "permissions": {
+      "title": "권한 필요",
+      "description": "Parrot가 제대로 작동하려면 몇 가지 권한이 필요합니다.",
+      "accessibility": {
+        "title": "접근성 권한",
+        "description": "녹음된 텍스트를 애플리케이션에 입력하기 위해 필요합니다."
+      },
+      "grant": "권한 부여",
+      "granted": "승인됨",
+      "waiting": "대기 중...",
+      "allGranted": "모두 설정 완료!",
+      "errors": {
+        "checkFailed": "권한 확인에 실패했습니다. 다시 시도해주세요.",
+        "requestFailed": "권한 요청에 실패했습니다. 다시 시도해주세요."
+      }
+    }
+  },
+  "modelSelector": {
+    "custom": "사용자 정의",
+    "active": "활성",
+    "switching": "전환 중...",
+    "noModelsAvailable": "사용 가능한 모델이 없습니다",
+    "extracting": "{{modelName}} 압축 해제 중...",
+    "extractingMultiple": "{{count}}개 모델 압축 해제 중...",
+    "extractingGeneric": "압축 해제 중...",
+    "downloading": "다운로드 중 {{percentage}}%",
+    "downloadingMultiple": "{{count}}개 모델 다운로드 중...",
+    "modelReady": "모델 준비 완료",
+    "loading": "{{modelName}} 로딩 중...",
+    "loadingGeneric": "로딩 중...",
+    "modelError": "모델 오류",
+    "modelUnloaded": "모델 언로드됨",
+    "noModelDownloadRequired": "모델 없음 - 다운로드 필요",
+    "deleteModel": "{{modelName}} 삭제",
+    "downloadSpeed": "{{speed}} MB/s",
+    "cancel": "취소",
+    "cancelDownload": "다운로드 취소",
+    "capabilities": {
+      "languageSelection": "여러 입력 언어를 지원합니다",
+      "singleLanguage": "이 언어만 지원합니다",
+      "multiLanguage": "다국어",
+      "languageOnly": "{{language}} 전용"
+    }
+  },
+  "settings": {
+    "howToUseTitle": "사용 방법",
+    "howToUseStep1": "텍스트를 선택",
+    "howToUseStep2": "<shortcut />을 눌러 소리 내어 읽기",
+    "modelSettings": {
+      "title": "{{model}} 설정",
+      "noSettingsNeeded": "이 모델은 별도의 설정 없이 자동으로 작동합니다.",
+      "kokoroVoice": {
+        "title": "Voice",
+        "description": "Select which Kokoro voice to use. Auto follows the language setting.",
+        "auto": "Auto (By Language)",
+        "searchPlaceholder": "Search voices...",
+        "loading": "Loading voices...",
+        "noResults": "No voices found",
+        "loadError": "Could not load available voices."
+      }
+    },
+    "general": {
+      "title": "일반",
+      "shortcut": {
+        "title": "Parrot 단축키",
+        "description": "음성-텍스트 녹음을 시작하는 키보드 단축키를 설정하세요",
+        "loading": "단축키 로딩 중...",
+        "none": "설정된 단축키 없음",
+        "notFound": "단축키를 찾을 수 없음",
+        "pressKeys": "키를 눌러주세요...",
+        "bindings": {
+          "speak": {
+            "name": "소리내어 읽기 단축키",
+            "description": "선택한 텍스트를 소리내어 읽습니다. 다시 누르면 중지됩니다."
+          },
+          "play_pause": {
+            "name": "재생/일시정지 단축키",
+            "description": "음성 재생을 일시정지하거나 재개합니다."
+          }
+        },
+        "errors": {
+          "restore": "원래 단축키 복원에 실패했습니다",
+          "set": "단축키 설정 실패: {{error}}",
+          "reset": "단축키를 원래 값으로 재설정하는데 실패했습니다"
+        }
+      },
+      "language": {
+        "title": "언어",
+        "description": "음성 인식 언어를 선택하세요. 자동은 언어를 자동으로 감지하며, 특정 언어를 선택하면 해당 언어의 정확도가 향상될 수 있습니다.",
+        "descriptionUnsupported": "Parakeet 모델은 자동으로 언어를 감지합니다. 수동 선택이 필요하지 않습니다.",
+        "searchPlaceholder": "언어 검색...",
+        "noResults": "언어를 찾을 수 없습니다",
+        "auto": "자동"
+      }
+    },
+    "models": {
+      "title": "음성 인식 모델",
+      "description": "음성 인식 모델을 선택하거나 추가 모델을 다운로드하세요. 모델마다 정확도와 속도가 다릅니다.",
+      "yourModels": "다운로드된 모델",
+      "availableModels": "다운로드 가능",
+      "downloaded": "다운로드됨",
+      "available": "다운로드 가능",
+      "deleteConfirm": "{{modelName}}을(를) 삭제하시겠습니까? 다시 사용하려면 다운로드해야 합니다.",
+      "deleteActiveConfirm": "{{modelName}}은(는) 현재 활성 모델입니다. 삭제하면 새 모델을 선택할 때까지 전사가 중지됩니다. 정말 삭제하시겠습니까?",
+      "deleteTitle": "모델 삭제",
+      "filters": {
+        "all": "전체",
+        "multiLanguage": "다국어",
+        "translation": "번역",
+        "allLanguages": "모든 언어"
+      },
+      "noModelsMatch": "이 필터에 맞는 모델이 없습니다."
+    },
+    "sound": {
+      "title": "사운드",
+      "audioFeedback": {
+        "label": "오디오 피드백",
+        "description": "녹음 시작 및 정지 시 소리 재생"
+      },
+      "outputDevice": {
+        "title": "출력 장치",
+        "description": "피드백 사운드를 위한 오디오 출력 장치를 선택하세요",
+        "placeholder": "출력 장치 선택...",
+        "loading": "로딩 중..."
+      },
+      "volume": {
+        "title": "볼륨",
+        "description": "오디오 피드백 사운드의 볼륨 조절"
+      }
+    },
+    "advanced": {
+      "title": "고급",
+      "groups": {
+        "app": "앱",
+        "speech": "Speech",
+        "history": "히스토리",
+        "experimental": "실험적"
+      },
+      "ttsWorkers": {
+        "title": "TTS Workers",
+        "description": "Number of parallel synthesis engines. Auto uses your CPU core count to decide.",
+        "auto": "Auto"
+      },
+      "ttsSpeed": {
+        "title": "Speech Speed",
+        "description": "Playback speed for text-to-speech output."
+      },
+      "shortenFirstChunk": {
+        "title": "Fast First Response",
+        "description": "Synthesize a shorter first chunk for faster time-to-speech, then use longer chunks."
+      },
+      "experimentalToggle": {
+        "label": "실험적 기능",
+        "description": "개발 중인 실험적 기능을 활성화합니다."
+      },
+      "startHidden": {
+        "label": "숨김으로 시작",
+        "description": "창을 열지 않고 시스템 트레이에서 실행합니다."
+      },
+      "autostart": {
+        "label": "시작 시 실행",
+        "description": "컴퓨터 로그인 시 Parrot를 자동으로 시작합니다."
+      },
+      "showTrayIcon": {
+        "label": "트레이 아이콘 표시",
+        "description": "시스템 트레이에 Parrot 아이콘을 표시합니다."
+      },
+      "overlay": {
+        "title": "오버레이 위치",
+        "description": "녹음 및 전사 중 시각적 피드백 오버레이를 표시합니다. Linux에서는 '없음'을 권장합니다.",
+        "options": {
+          "none": "없음",
+          "bottom": "하단",
+          "top": "상단"
+        }
+      },
+      "modelUnload": {
+        "title": "모델 언로드",
+        "description": "모델을 지정된 시간 동안 사용하지 않으면 자동으로 GPU/CPU 메모리를 해제합니다",
+        "options": {
+          "never": "안 함",
+          "immediately": "즉시",
+          "min2": "2분 후",
+          "min5": "5분 후",
+          "min10": "10분 후",
+          "min15": "15분 후",
+          "hour1": "1시간 후",
+          "sec5": "5초 후 (디버그)"
+        }
+      }
+    },
+    "history": {
+      "title": "히스토리",
+      "openFolder": "오디오 폴더 열기",
+      "loading": "히스토리 로딩 중...",
+      "empty": "아직 변환된 내용이 없습니다. 녹음을 시작하여 히스토리를 만드세요!",
+      "copyToClipboard": "녹음 내용을 클립보드에 복사",
+      "save": "변환된 텍스트 저장",
+      "unsave": "저장에서 제거",
+      "delete": "항목 삭제",
+      "deleteError": "항목 삭제에 실패했습니다. 다시 시도해주세요."
+    },
+    "debug": {
+      "title": "디버그",
+      "logDirectory": {
+        "title": "로그 디렉토리",
+        "description": "로그 파일이 저장되는 위치"
+      },
+      "logLevel": {
+        "title": "로그 레벨",
+        "description": "로깅의 상세도 설정"
+      },
+      "updateChecks": {
+        "label": "업데이트 확인",
+        "description": "Parrot의 새 버전을 자동으로 확인합니다"
+      },
+      "soundTheme": {
+        "label": "사운드 테마",
+        "description": "녹음 시작 및 정지 피드백을 위한 사운드 테마를 선택하세요"
+      },
+      "historyLimit": {
+        "title": "히스토리 제한",
+        "description": "보관할 최대 히스토리 항목 수",
+        "entries": "항목"
+      },
+      "historyRetention": {
+        "title": "녹음 자동 삭제",
+        "description": "공간을 절약하기 위해 오래된 녹음을 자동으로 삭제합니다",
+        "never": "안 함",
+        "preserveLimit": "최근 {{count}}개 유지",
+        "days3": "3일 후",
+        "weeks2": "2주 후",
+        "months3": "3개월 후",
+        "placeholder": "보관 기간 선택..."
+      },
+      "keyboardImplementation": {
+        "title": "키보드 구현",
+        "description": "키보드 단축키 백엔드를 선택하세요.",
+        "bindingsReset": "키보드 단축키가 호환되지 않아 기본값으로 재설정되었습니다"
+      },
+      "paths": {
+        "appData": "앱 데이터:",
+        "models": "모델:",
+        "settings": "설정:"
+      }
+    },
+    "about": {
+      "title": "정보",
+      "version": {
+        "title": "버전",
+        "description": "Parrot의 현재 버전"
+      },
+      "appDataDirectory": {
+        "title": "앱 데이터 디렉토리",
+        "description": "Parrot가 데이터를 저장하는 위치"
+      },
+      "sourceCode": {
+        "title": "소스 코드",
+        "description": "소스 코드 보기 및 기여",
+        "button": "GitHub에서 보기"
+      },
+      "supportDevelopment": {
+        "title": "개발 지원",
+        "description": "Parrot 개발을 계속할 수 있도록 도와주세요",
+        "button": "후원하기"
+      },
+      "acknowledgments": {
+        "title": "감사의 말",
+        "handy": {
+          "title": "Handy",
+          "description": "The original project that Parrot was forked from",
+          "details": "Parrot is a fork of Handy by CJ Pais. Thanks for building the foundation that made Parrot possible."
+        }
+      }
+    }
+  },
+  "footer": {
+    "downloadingModel": "{{model}} 다운로드 중...",
+    "checkingUpdates": "업데이트 확인 중...",
+    "updateAvailable": "업데이트 사용 가능: {{version}}",
+    "updateAvailableShort": "업데이트 사용 가능",
+    "upToDate": "최신 상태",
+    "downloadUpdate": "업데이트 다운로드",
+    "restart": "재시작",
+    "updateCheckingDisabled": "업데이트 확인 비활성화됨",
+    "downloading": "다운로드 중... {{progress}}%",
+    "installing": "설치 중...",
+    "preparing": "준비 중...",
+    "checkForUpdates": "업데이트 확인"
+  },
+  "common": {
+    "loading": "로딩 중...",
+    "save": "저장",
+    "cancel": "취소",
+    "reset": "재설정",
+    "add": "추가",
+    "remove": "제거",
+    "delete": "삭제",
+    "edit": "편집",
+    "create": "만들기",
+    "update": "업데이트",
+    "close": "닫기",
+    "open": "열기",
+    "default": "기본값",
+    "enabled": "활성화됨",
+    "disabled": "비활성화됨",
+    "on": "켜짐",
+    "off": "꺼짐",
+    "yes": "예",
+    "no": "아니오",
+    "noOptionsFound": "옵션을 찾을 수 없습니다"
+  },
+  "accessibility": {
+    "permissionsRequired": "접근성 권한 필요",
+    "permissionsDescription": "Parrot는 녹음된 텍스트를 입력하기 위해 접근성 권한이 필요합니다.",
+    "openSettings": "시스템 설정 열기",
+    "dismiss": "닫기"
+  },
+  "errors": {
+    "loadDirectory": "디렉토리 로딩 오류: {{error}}"
+  },
+  "appLanguage": {
+    "title": "애플리케이션 언어",
+    "description": "Parrot 인터페이스의 언어를 변경하세요"
+  },
+  "overlay": {
+    "speaking": "Speaking...",
+    "processing": "처리 중...",
+    "reading": "Reading:"
+  }
+}

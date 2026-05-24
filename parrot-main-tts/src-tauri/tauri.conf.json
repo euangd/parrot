@@ -1,0 +1,81 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Parrot",
+  "version": "26.2.4",
+  "identifier": "com.rishiskhare.parrot",
+  "build": {
+    "beforeDevCommand": "bun run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "bun run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "macOSPrivateApi": true,
+    "windows": [
+      {
+        "label": "main",
+        "title": "Parrot",
+        "width": 680,
+        "height": 570,
+        "minWidth": 680,
+        "minHeight": 570,
+        "resizable": true,
+        "maximizable": false,
+        "visible": false
+      }
+    ],
+    "security": {
+      "csp": null,
+      "assetProtocol": {
+        "enable": true,
+        "scope": {
+          "allow": ["**"],
+          "requireLiteralLeadingDot": false
+        }
+      }
+    }
+  },
+  "bundle": {
+    "active": true,
+    "createUpdaterArtifacts": true,
+    "targets": "all",
+    "resources": ["resources/**/*"],
+    "license": "MIT",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "macOS": {
+      "files": {},
+      "hardenedRuntime": true,
+      "minimumSystemVersion": "10.13",
+      "entitlements": "Entitlements.plist"
+    },
+    "linux": {
+      "deb": {
+        "depends": ["libgtk-layer-shell0"]
+      },
+      "rpm": {
+        "compression": {
+          "type": "none"
+        }
+      },
+      "appimage": {
+        "bundleMediaFramework": true,
+        "files": {}
+      }
+    },
+    "windows": {}
+  },
+  "plugins": {
+    "updater": {
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDcxNjc2RDZGNEFGMTUzQjAKUldTd1UvRktiMjFuY1FFYU5xc2M1MXFMZDdXcTdXTEI0ckltcUNnYVdjeVhpVjhmQmlrUk55T0IK",
+      "endpoints": [
+        "https://github.com/rishiskhare/parrot/releases/latest/download/latest.json"
+      ]
+    }
+  }
+}
